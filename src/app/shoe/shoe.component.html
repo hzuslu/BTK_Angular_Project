@@ -1,0 +1,60 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-5" *ngFor="let item of count">
+			<div class="row justify-content-center mb-3" *ngFor="let product of shoes">
+				<div class="col-md-12">
+					<div class="card shadow-0 border rounded-3 mb-4">
+						<div class="card-body">
+							<div class="row g-0">
+								<div class="col-xl-3 col-md-4 d-flex justify-content-center">
+									<div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
+										<img [src]="product.image" class="w-100" (click)="openDialog(product)" />
+										<a href="#!">
+											<div class="hover-overlay">
+												<div class="mask" style="background-color: rgba(253, 253, 253, 0.15);">
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-xl-6 col-md-5 col-sm-7">
+									<h5 (click)="openDialog(product)">{{ product.title }}</h5>
+									<div class="d-flex flex-row">
+										<div class="text-warning mb-1 me-2">
+											<i class="fa fa-star" *ngFor="let star of [1, 2, 3, 4, 5]"></i>
+											<span class="ms-1">{{ product.rating }}</span>
+										</div>
+										<span class="text-muted">{{ product.orders }} orders</span>
+									</div>
+									<p class="text mb-4 mb-md-0">
+										{{ product.description | slice}}
+									</p>
+								</div>
+								<div class="col-xl-3 col-md-3 col-sm-5">
+									<div class="d-flex flex-row align-items-center mb-1">
+										<h4 class="mb-1 me-1">${{ product.price }}</h4>
+										<span class="text-danger"><s>${{ product.discountedPrice }}</s></span>
+									</div>
+									<h6 class="text-success">{{ product.shipping }}</h6>
+									<div class="mt-4">
+										<button class="btn btn-primary" (click)="addCarts(product)">
+											<i class="bi bi-cart4"></i> Add To Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr />
+		</div>
+
+		<div class="col-lg-2">
+			<div id="sidebar"></div>
+			<div id="sidebar2"></div>
+			<div id="sidebar3"></div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,56 @@
+/* Adjustments for responsiveness */
+
+/* Main container adjustments */
+#main {
+    margin-right: 5%; /* Example: relative margin */
+    margin-top: 30px;
+}
+
+/* Image scaling on hover */
+.bg-image img {
+    max-width: 100%; /* Ensures images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.bg-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Overlay adjustments */
+.bg-image .hover-overlay:hover .mask {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar adjustments */
+#sidebar, #sidebar2, #sidebar3 {
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sidebar {
+    height: 200px; /* Example: fixed height */
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHZhd2kzbGhrcDduc3l4MWc2NHY0dWY2b2FzMzZ0ZWZvejVqMjdwcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H1akf7M9opa6W5qX8k/giphy.webp');
+}
+
+#sidebar2 {
+    height: 240px; /* Example: fixed height */
+    background-image: url('https://www.stick-manufaktur.de/wp-content/uploads/2021/05/Neuer-Beitrag-1.jpg');
+    margin-top: 3%; /* Example: relative margin */
+}
+
+#sidebar3 {
+    height: 240px; /* Example: fixed height */
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExczY0eHJ2b2cwMHl6M3VsM2J5aWlodHpkYjd1NjIxbzB4bjdoYmMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YPbVyo3m12MJ6EBcL8/giphy.webp');
+    margin-top: 3%; /* Example: relative margin */
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+    #sidebar, #sidebar2, #sidebar3 {
+        height: 180px; /* Adjusted height for smaller screens */
+    }
+}

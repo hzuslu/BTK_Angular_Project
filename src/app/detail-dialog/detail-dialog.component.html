@@ -1,0 +1,20 @@
+<div class="dialog-container">
+	<div class="dialog-image">
+		<img [src]="data.image" alt="{{ data.title }}">
+	</div>
+	<div class="dialog-details">
+		<h2>{{ data.title }}</h2>
+		<p><strong>Price:</strong> ${{ data.price }} <span *ngIf="data.discountedPrice"><s>${{
+					data.discountedPrice }}</s></span></p>
+		<p><strong>Rating:</strong> {{ data.rating }} stars</p>
+		<p><strong>Orders:</strong> {{ data.orders }} orders</p>
+		<p><strong>Shipping:</strong> {{ data.shipping }}</p>
+		<p>{{ data.description }}</p>
+
+	</div>
+	<div class="dialog-actions">
+		<button class="btn btn-primary">
+			<i class="bi bi-cart4"></i> Add To Cart
+		</button>
+	</div>
+</div>

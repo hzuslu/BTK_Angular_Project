@@ -1,0 +1,59 @@
+#main {
+	margin-right: 350px;
+	margin-top: 30px;
+}
+
+.bg-image img {
+	max-width: 200px;
+	/* Adjust as needed (e.g., 150px) */
+	max-height: 200px;
+	/* Adjust as needed (e.g., 150px) */
+	object-fit: cover;
+	/* Maintain aspect ratio */
+}
+
+
+.bg-image:hover img {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
+}
+
+.bg-image .hover-overlay:hover .mask {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#sidebar {
+	background-color: red;
+	height: 200px;
+	background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmFsa2dtbnl5NnR5Z21vejQ1Z202YzM4cHU3dTg5dGdkNDdtbDR0byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mjHdtfDP25t7hRw8VT/giphy.webp');
+	background-size: cover;
+	/* Ensure the image covers the entire div */
+	background-position: center;
+	/* Center the image */
+	background-repeat: no-repeat;
+	/* Prevent the image from repeating */
+}
+
+#sidebar2 {
+	background-color: red;
+	height: 240px;
+	background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTNxNHE3bzk1cG9nMWhxcGNxcTYzZ2cxaHhucDJseGowcHE5cnNqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/liaafClqtNxFOaI9DQ/giphy.webp');
+	background-size: cover;
+	/* Ensure the image covers the entire div */
+	background-position: center;
+	/* Center the image */
+	background-repeat: no-repeat;
+	/* Prevent the image from repeating */
+	margin-top: 50px;
+}
+
+
+#sidebar3 {
+    background-color: red;
+    height: 200px;
+    background-image: url('https://cdn.dribbble.com/users/5297140/screenshots/13995477/media/3769cfb75e2e53734862cc0a3bc1c732.gif');
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}

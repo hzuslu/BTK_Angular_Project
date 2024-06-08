@@ -1,0 +1,49 @@
+#main {
+	margin-right: 350px;
+	margin-top: 30px;
+}
+
+.bg-image img {
+	max-width: 200px;
+	/* Adjust as needed (e.g., 150px) */
+	max-height: 200px;
+	/* Adjust as needed (e.g., 150px) */
+	object-fit: cover;
+	/* Maintain aspect ratio */
+}
+
+
+.bg-image:hover img {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
+}
+
+.bg-image .hover-overlay:hover .mask {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#sidebar {
+	background-color: red;
+	height: 200px;
+	background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW4wM3B5Znowa3U3dmV1M3J4azA2dThrdjFxd3B5NDVjbTNvNTVwaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d2YZzTQvyoNYf9YI/giphy.webp');
+	background-size: cover;
+	/* Ensure the image covers the entire div */
+	background-position: center;
+	/* Center the image */
+	background-repeat: no-repeat;
+	/* Prevent the image from repeating */
+}
+
+#sidebar2 {
+	background-color: red;
+	height: 240px;
+	background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaW02cWhobTJkZTM2Mnp5ZnJqNGY3OGdobGVqNHJ2amxta3l2dWFhNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f8xo9yi5V9KjEZNKjV/giphy.webp');
+	background-size: cover;
+	/* Ensure the image covers the entire div */
+	background-position: center;
+	/* Center the image */
+	background-repeat: no-repeat;
+	/* Prevent the image from repeating */
+	margin-top: 50px;
+}

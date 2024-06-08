@@ -1,0 +1,68 @@
+/* Base styles */
+body {
+    background: #eee;
+}
+
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem; /* Adjust margin as needed */
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+
+.avatar-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem; /* Apply rounded corners directly here */
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+.me-4 {
+    margin-right: 1.5rem !important;
+}
+
+.baslik {
+    font-family: "Redressed", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .avatar-text {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

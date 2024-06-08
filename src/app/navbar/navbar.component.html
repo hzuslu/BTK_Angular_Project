@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+	<div class="container">
+		<a class="navbar-brand" routerLink="/">
+			<img src="../../assets/images/logo/image.png" alt="BTK SHOP Logo" style="height: 100px; width: 100;">
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+
+		<div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+			<div class="input-group">
+				<span class="border-success input-group-text bg-success text-white">
+					<i class="fa fa-search"></i>
+				</span>
+				<input type="text" class="form-control border-success">
+				<button type="button" class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5" >Connect Now</button>
+			</div>
+		</div>
+
+		<div class=" collapse navbar-collapse" id="navbarNavDropdown">
+			<div class="ms-auto d-none d-lg-block">
+				<div class="input-group">
+					<span class="border-success input-group-text bg-success text-white"><i
+							class="fa-solid fa-magnifying-glass"></i></span>
+					<input type="text" class="form-control border-success" style="color:#000000" #query>
+					<button class="btn btn-success text-white" (click)="filterList(query.value)">Search</button>
+				</div>
+			</div>
+			<ul class="navbar-nav ms-auto ">
+				<li class="nav-item">
+					<a class="nav-link mx-2 text-uppercase active" aria-current="page" href="/products">CATALOG</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle mx-2 text-uppercase active" id="navbarDropdownMenuLink"
+						role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Products
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li><a class="dropdown-item" routerLink="/jacket">Jackets</a></li>
+						<li><a class="dropdown-item" routerLink="/shoe">Shoes</a></li>
+						<li><a class="dropdown-item" routerLink="/necklace">Necklaces</a></li>
+						<li><a class="dropdown-item" routerLink="/handbag">Handbags</a></li>
+						<li><a class="dropdown-item" routerLink="/hat">Hats</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link mx-2 text-uppercase active" routerLink="/career">Career</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link mx-2 text-uppercase active" href="/about">About Us</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ms-auto ">
+				<li class="nav-item">
+					<a class="nav-link mx-2 text-uppercase active" routerLink="/basket">
+					  <i class="bi bi-cart4"></i>
+					  <span class="badge bg-secondary">{{budgetCount}}</span>
+					</a>
+				  </li>
+
+				<li class="nav-item">
+					<a class="nav-link mx-2 text-uppercase active" routerLink="/login"><i
+							class="bi bi-person-fill"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,7 @@
+.signup-title {
+    text-align: center; /* Metni ortala */
+    font-size: 2.5rem; /* İstenilen boyut */
+	font-family: "IBM Plex Sans Thai", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }

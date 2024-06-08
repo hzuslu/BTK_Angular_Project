@@ -1,0 +1,77 @@
+.dialog-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 20px;
+	width: 900px;
+	height: 500px;
+	background: rgba(255, 255, 255, 0.69);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.8px);
+	-webkit-backdrop-filter: blur(6.8px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.dialog-image {
+	flex: 1;
+	margin-right: 20px;
+}
+
+.dialog-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.dialog-details {
+	flex: 2;
+}
+
+.dialog-details h2 {
+	margin-top: 0;
+}
+
+.dialog-details p {
+	margin: 10px 0;
+}
+
+.dialog-actions {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-top: 1px solid #ccc;
+}
+
+.dialog-actions button {
+	margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+	.dialog-container {
+		width: 100%;
+		/* Full width on smaller screens */
+		height: auto;
+		/* Auto height to accommodate content */
+		flex-direction: column;
+		/* Change to column layout */
+		padding: 15px;
+		/* Adjust padding for smaller screens */
+	}
+
+	.dialog-image {
+		margin-right: 0;
+		margin-bottom: 15px;
+		/* Adjust margin bottom for spacing */
+	}
+
+	.dialog-actions {
+		flex-direction: column;
+		/* Stack buttons vertically */
+		align-items: flex-start;
+		/* Align buttons to the start */
+		padding: 10px 0;
+		/* Adjust padding for buttons */
+	}
+}

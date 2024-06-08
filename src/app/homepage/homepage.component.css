@@ -1,0 +1,85 @@
+/* Genel yapı ayarları */
+.img-wrapper {
+	width: 100%;
+	max-width: 100%;
+	/* Genişlik responsive olacak şekilde ayarlandı */
+	height: 600px;
+	margin-left: 20px;
+	box-shadow: none;
+	border: 0;
+	left: 0;
+	background: #fff;
+}
+
+.img-wrapper img {
+	object-fit: cover;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.col-8,
+.col-4 {
+	padding: 1rem;
+}
+
+.go {
+	/* From https://css.glass */
+	background: rgba(27, 74, 99, 0.46);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.3px);
+	-webkit-backdrop-filter: blur(5.3px);
+	border: 1px solid rgba(65, 119, 149, 0.76);
+	height: 220px;
+	width: 300px;
+	transform: rotate(0.94turn);
+}
+
+.go:hover {
+	transform: scale(1.1);
+	/* Ekledik: Kartın büyüyerek zoom efekti yapması */
+}
+
+@media (max-width: 768px) {
+	.img-wrapper {
+		width: 75%;
+	}
+
+	.go {
+		width: 100%;
+		height: auto;
+	}
+
+	.col-8,
+	.col-4 {
+		padding: 0.5rem;
+	}
+}
+
+.go h2 {
+	font-family: "Mate SC", serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #40aa52;
+	margin-top: 0;
+	padding: 1rem;
+}
+
+#btn {
+	font-family: "Concert One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: green;
+	transform: rotate(0.02turn);
+
+}
+
+#btn:hover {
+    transform: scale(1.1);
+    background-color: #333; /* Hover olduğunda arka plan rengi koyulaşsın */
+    color: #fff; /* Yazı rengi beyaz olsun */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Hafif bir gölge efekti ekle */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş efektleri ekle */
+}
+
+

@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="text-center mb-5">
+        <h3 class="baslik">Job Openings at BTK Shop</h3>
+        <p class="lead">We are currently accepting applications for open positions at BTK Shop.</p>
+    </div>
+
+    <div class="card mb-3" *ngFor="let item of jobCards">
+        <div class="card-body">
+            <div class="d-flex flex-column flex-lg-row">
+                <span class="avatar avatar-text rounded-3 me-4 mb-2" [ngClass]="{ 'bg-primary': item.avatar === 'TM', 'bg-secondary': item.avatar === 'GM',
+                             'bg-info': item.avatar === 'AC', 'bg-warning': item.avatar === 'EC',
+                             'bg-danger': item.avatar === 'ND', 'bg-success': item.avatar === 'AD',
+                             'bg-dark': item.avatar === 'ED' }">
+                    {{item.avatar}}
+                </span>
+                <div class="row flex-fill">
+                    <div class="col-sm-5">
+                        <h4 class="h5">{{item.title}}</h4>
+                        <span class="badge bg-secondary">{{item.location}}</span> <span class="badge bg-success"
+                            style="margin-left: 5px;">{{item.salary}}</span>
+                    </div>
+                    <div class="col-sm-4 py-2">
+                        <span class="badge bg-secondary" style="margin-left: 5px;">{{item.skills[0]}}</span>
+                        <span class="badge bg-secondary" style="margin-left: 5px;">{{item.skills[1]}}</span>
+                        <span class="badge bg-secondary" style="margin-left: 5px;">{{item.skills[2]}}</span>
+
+                    </div>
+                    <div class="col-sm-3 text-lg-end">
+                        <a  class="btn btn-primary stretched-link" (click)="apply()">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="color: rgb(223, 34, 182); height: 3px;">
+    </div>
+
+
+</div>
